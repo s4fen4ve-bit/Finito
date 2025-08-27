@@ -1,0 +1,70 @@
+/*Reseteo de espacios*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Variables*/
+
+:root{
+
+--color-fondo: #726c1ab0;
+--color-acontecimiento: #af7b2c;
+--color-acciones: #af7b2c;
+--color-fondo-acontecimiento: #4d4414;
+--color-fondo-acciones: #4d4414 ;
+
+--Tamaño-acontecimiento: 2rem;
+--Tamaño-acciones: 1.5rem;
+}
+
+body{
+
+background-color: var(--color-fondo);
+
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+
+}
+
+.acontecimientos{
+
+display: inline-block;
+color: var(--color-acontecimiento);
+font-size: var(--Tamaño-acontecimiento);
+background-color: var(--color-fondo-acontecimiento);
+padding: 100px 120px;
+margin: 40px auto; 
+border-radius: 12px;
+box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+
+
+}
+.acciones{
+
+display: flex;
+justify-content:space-around; 
+background-color: var(--color-fondo-acciones);
+color: var(--color-acciones);;
+border: none;
+padding: 10px 0px;
+margin: 10px auto; 
+font-size: var(--Tamaño-acciones);
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s;
+&:hover{
+
+    background-color: var(--color-fondo);
+
+}}
+
+.esconder{
+
+display: none;
+background-color: var(--color-fondo);
+
+}
